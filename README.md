@@ -99,8 +99,8 @@ El sitio abordará los **5 Pilares del Ciclo de Vida del Dato**, cada uno desarr
 ### 1️⃣ Clonar el repositorio base
 
 ```bash
-git clone https://github.com/[nombre-organizacion]/data-journey.git
-cd data-journey
+git clone https://github.com/FemCoders-P5/hello_world_from_PR.git
+cd hello_world_from_PR
 ```
 
 ### 2️⃣ Crear una nueva rama por equipo
@@ -109,8 +109,7 @@ Esto lo harán creando la rama a partir de los issues que se creen
 
 ### 3️⃣ Crear o editar su carpeta asignada
 
-- Añadir su HTML y CSS dentro de la carpeta correspondiente
-- Mantener coherencia visual con los estilos globales (`globals.css`)
+- Añadir su HTML y CSS dentro de la carpeta correspondiente, usando de plantilla lo que hay en el HTML y CSS en la carpeta `/examples`
 
 ### 4️⃣ Confirmar y subir cambios
 
