@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 15px 40px;
+    border-bottom: #333 solid 1px;
+}
+
+#menu-left ul li {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+}
+
+#iconos {
+    display: block;
+    text-align: right;
+    width: 200px;
+}
+
+#menu-left ul li a:link,
+#menu-left ul li a:visited,
+#menu-left ul li a:active {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+#menu-left ul li a:hover {
+
+    color: #4b71ed;
+    text-decoration: none;
+
+}
+
+#logo img {
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
+}
+#logo {
+    display: flex;
+    text-align: left;
+    width: 40px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    float: left;
+}
+
+.menu-btn span {
+    background: rgb(87, 87, 87);
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    display: block;
+    float: left;
+}
+
+#menu-left {
+    display: flex;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.product-container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap:60px;
+}
+
+/* GALERÍA */
+.product-gallery{
+    display:grid;
+    grid-template-columns:80px 1fr;
+    gap:20px;
+}
+
+/* MINIATURAS */
+.product-circle{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.product-circle img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+    border:1.5px solid #3b3b3b;
+    cursor:pointer;
+    transition:transform .2s;
+}
+
+.product-circle img:hover{
+    transform:scale(1.1);
+}
+
+/* IMAGEN PRINCIPAL */
+.product-big{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 20px;
+    background-color: #e4e4e4;
+}
+.product-big img{
+    width:100%;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+/* INFORMACIÓN DEL PRODUCTO */
+.product-info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.product-info h1{
+    font-size:2.5rem;
+    color:#333;
+}
+
+.product-info p{
+    font-size:1.2rem;
+    color:#555;
+}
+
+.product-info h2{
+    font-size:1.4rem;
+    color:#333;
+}
+
+@media (max-width: 768px) {
+#menu-left {
+    display: none; }
+
+    .menu-btn {
+        display: flex;
+
+    }
+}
