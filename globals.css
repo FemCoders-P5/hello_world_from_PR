@@ -1,0 +1,98 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* ocupa el espacio libre entre header y footer */
+}
+
+/* Tipografía general */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+/* Encabezado y navegación */
+header {
+  background-color: #0b132b;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #5bc0be;
+}
+
+/* Secciones generales */
+.content-section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1c2541;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* ======== Acordeón ======== */
+
+.accordion-header {
+  background-color: #0b132b;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.accordion-header:hover {
+  background-color: #1c2541;
+}
+
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+  margin-bottom: 1rem;
+}
+
+.content-section.active .accordion-header {
+  background-color: #3a506b;
+}

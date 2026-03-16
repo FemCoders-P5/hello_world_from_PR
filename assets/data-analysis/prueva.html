@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./prueva_files/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div id="logo">
+            <img src="./prueva_files/google-logo.png" alt="Google Store Logo">
+        </div>
+        <nav id="menu-left">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#">Phones</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Earbuds</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Watches</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Smart Home</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Accesories</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Subscriptions</a></li>
+            </ul>
+        </nav>
+
+        <div id="iconos">
+            <img src="./prueva_files/Search.svg" alt="Search Icon">
+            <img src="./prueva_files/Help.svg" alt="Help Icon">
+            <img src="./prueva_files/Cart.svg" alt="Cart Icon">
+            <img src="./prueva_files/Avatar.svg" alt="Avatar Icon">
+        </div>
+         <div class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main class="product-container">
+    <section class="product-gallery">
+        <div class="product-circle">
+            <img src="./prueva_files/earbuds_01.png" alt="Pixel Buds vista frontal">
+            <img src="./prueva_files/earbuds_02.png" alt="Pixel Buds vista lateral">
+            <img src="./prueva_files/earbuds_03.png" alt="Pixel Buds detalle">
+            <img src="./prueva_files/earbuds_04.png" alt="Pixel Buds en uso">
+        </div>
+        <div class="product-big">
+            <img src="./prueva_files/earbuds_01.png" alt="Google Pixel Buds Pro">
+        </div>
+    </section>
+    <section class="product-info">
+        <h1>Google Pixel Buds Pro</h1>
+        <p>Music &amp; Sound</p>
+        <h2>229€</h2>
+        <hr>________________________________________________________
+    </section>
+        </main>
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+P</body></html>
